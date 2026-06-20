@@ -2,35 +2,41 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 import { colors } from "../styles/tokens";
+import plant from  "../../src/images/plant.jpg"
+import cement from  "../../src/images/cement.jpg"
+import food from  "../../src/images/food.jpg"
+import trailer from  "../../src/images/trailer.jpg"
+
 
 const slides = [
   {
     id: 1,
-    src: "https://buagroup.com/wp-content/uploads/2025/07/Copy-of-2X6A4409_Easy-Resize.com_.jpg",
+    src: cement,
+    fallback: cement,
     label: "BUA Cement — Obu Plant, Edo State",
     tag: "Infrastructure & Cement",
     accent: colors.primary,
   },
   {
     id: 2,
-    src: "https://buagroup.com/wp-content/uploads/2025/05/DJI_0964_Easy-Resize.com_.jpg",
-    fallback: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1600&q=85",
+    src: food,
+    fallback: food,
     label: "BUA Foods — Operations, Lagos",
     tag: "Food & FMCG",
     accent: "#15803d",
   },
   {
     id: 3,
-    src: "https://buagroup.com/wp-content/uploads/2024/12/BUA-HQ-Drone-Shots-6-edited-1536x1150-1-1024x767.jpg",
-    fallback: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=85",
+    src: plant,
+    fallback: plant,
     label: "BUA Group Headquarters — Lagos",
     tag: "Corporate",
     accent: "#1d4ed8",
   },
   {
     id: 4,
-    src: "https://buagroup.com/wp-content/uploads/2025/05/DJI_0336-1.jpg",
-    fallback: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1600&q=85",
+    src: trailer,
+    fallback: trailer,
     label: "BUA Ports & Terminals — Apapa",
     tag: "Ports & Logistics",
     accent: "#0369a1",

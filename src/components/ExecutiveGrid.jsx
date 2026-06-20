@@ -211,7 +211,7 @@ const BiographyModal = ({ exec, onClose }) => {
                 />
               </div>
             </div>
-            <div style={{ padding: "20px 26px 28px", marginTop: "auto" }}>
+            <div style={{ padding: "20px 26px 28px"}}>
               <p className="font-bold text-white leading-snug mb-1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "14.5px" }}>{exec.name}</p>
               <p className="text-xs" style={{ color: colors.primary }}>{exec.title}</p>
               <p className="text-xs mt-0.5" style={{ color: "rgba(255,255,255,0.55)" }}>{exec.subtitle}</p>

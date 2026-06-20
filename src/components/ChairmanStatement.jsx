@@ -28,10 +28,10 @@ const ChairmanStatement = () => {
 
             <div style={{position:"relative",borderRadius:"22px",overflow:"hidden",aspectRatio:"3/4",maxHeight:"660px",zIndex:1,
               /* Fixed attachment for Ken Burns feel on scroll */
-              backgroundImage:`url(${imgErr?"https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80":"https://buagroup.com/wp-content/uploads/2025/07/Chairman-website-picture.jpg"})`,
+              backgroundImage:`url(${imgErr?"https://www.buafoodsplc.com/wp-content/uploads/2021/12/Abdul-Samad-RAbiu-1.jpg":"https://www.buafoodsplc.com/wp-content/uploads/2021/12/Abdul-Samad-RAbiu-1.jpg"})`,
               backgroundAttachment:"local", backgroundSize:"cover", backgroundPosition:"center top",
             }}>
-              <img src="https://buagroup.com/wp-content/uploads/2025/07/Chairman-website-picture.jpg" alt="Abdul Samad Rabiu"
+              <img src="https://www.buafoodsplc.com/wp-content/uploads/2021/12/Abdul-Samad-RAbiu-1.jpg" alt="Abdul Samad Rabiu"
                 onError={()=>setImgErr(true)} style={{opacity:0,position:"absolute",width:1,height:1}} />
               <div style={{position:"absolute",inset:0,background:"linear-gradient(to top,rgba(18,22,26,0.85) 0%,transparent 55%)"}} aria-hidden="true" />
               <div style={{position:"absolute",bottom:0,left:0,right:0,padding:"28px"}}>

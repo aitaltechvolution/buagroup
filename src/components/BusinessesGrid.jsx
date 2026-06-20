@@ -3,22 +3,24 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 import { colors, scrollReveal } from "../styles/tokens";
 import { useScrollDirection } from "../hooks/useScrollDirection";
+import cement from "../images/cement.jpg"
+import food from "../images/food.jpg"
 
 // All 4 cards with fallback images so they always render
 const cards = [
   {
     id: "foods", sector: "Food & FMCG", name: "BUA Foods PLC", icon: "🌾",
     description: "Spanning sugar refining, flour milling, pasta, edible oils, and rice — nourishing millions across Nigeria.",
-    image: "https://buagroup.com/wp-content/uploads/2025/05/DJI_0964_Easy-Resize.com_.jpg",
-    fallback: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=800&q=80",
+    image: food,
+    fallback: food,
     href: "https://www.buafoodsplc.com/",
     accent: "#15803d",
   },
   {
     id: "cement", sector: "Infrastructure & Cement", name: "BUA Cement PLC", icon: "🏭",
     description: "11M+ MTPA capacity across Edo and Sokoto — sub-Saharan Africa's premier cement manufacturer.",
-    image: "https://buagroup.com/wp-content/uploads/2025/05/731A9162_Easy-Resize.com_.jpg",
-    fallback: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80",
+    image: cement,
+    fallback: cement,
     href: "https://www.buacement.com/",
     accent: "#b45309",
   },
